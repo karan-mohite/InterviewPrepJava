@@ -1,3 +1,14 @@
+class Area
+{	
+	static void fun1()
+	{	
+		System.out.println("Area 1");
+	}
+	static void fun2()
+	{	
+		System.out.println("Area 2");
+	}	
+}
 class Example
 {	
 	static void fun1()
@@ -11,7 +22,9 @@ class Example
 	public static void main(String args[])
 	{	
 		System.out.println("C");
-		fun1();
-		fun2();
+		Area.fun1();
+		Area.fun2();
+		Example.fun1();
+		Example.fun2();
 	}
 }
