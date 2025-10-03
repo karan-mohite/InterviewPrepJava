@@ -1,10 +1,10 @@
 class Example
 {	
-	void fun1()
+	static void fun1()
 	{	
 		System.out.println("A");
 	}
-	void fun2()
+	static void fun2()
 	{	
 		System.out.println("B");
 	}
@@ -12,5 +12,6 @@ class Example
 	{	
 		System.out.println("C");
 		fun1();
+		fun2();
 	}
 }
