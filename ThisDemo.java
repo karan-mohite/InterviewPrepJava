@@ -23,7 +23,6 @@ class ThisDemo
 		Example e1=new Example();
 		e1.f1(10,20);
 		e1.display();
-		
 		Example e2=new Example();
 	}
 }
