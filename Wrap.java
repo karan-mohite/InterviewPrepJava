@@ -10,7 +10,7 @@ class Wrap
 		System.out.println(z);
 		
 		Double x1=Double.valueOf("56");
-		double y=x1.doubleValue();
+		double y=x1.doubleValue(); 
 		System.out.println(y);		
 	}
 }
