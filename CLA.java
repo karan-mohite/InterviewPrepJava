@@ -10,3 +10,4 @@ class CLA
 		System.out.println("Average is :"+s/args.length);
 	}		
 }
+	

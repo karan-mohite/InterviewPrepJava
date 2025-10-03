@@ -9,7 +9,7 @@ class Area
 		System.out.println("Area 2");
 	}	
 }
-class Example
+class Example	
 {	
 	static void fun1()
 	{	
