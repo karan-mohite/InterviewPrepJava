@@ -1,12 +1,14 @@
 class Karan
 {
-	void fun1()
+	int x;	//instance(object)member variable 		
+	int y;	//instance(object)member variable
+	void fun1()	//instance(object)member functions
 	{	
-	   System.out.println("Fun1");
+	   System.out.println("fun1");
 	}
-	void fun2()
+	void fun2() //instance(object)member functions
 	{			
-	   System.out.println("Fun2");
+	   System.out.println("fun2");
 	}
 }
 class Object1
@@ -15,6 +17,6 @@ class Object1
 	{	
 		Karan k1=new Karan();
 		k1.fun1();
-		k1.fun2();
+		k1.fun2();	
 	}	
 }
