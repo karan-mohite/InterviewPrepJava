@@ -8,7 +8,7 @@ class Demo
 	}
 	Demo(int f)
 	{
-			
+		
 	}
 	Demo()
 	{	
