@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.event.*;
+import java.awt.*;
+
 class LoginSwingDemo extends JFrame
 {	
 	JLabel l1,l2,l3,l4;
@@ -17,14 +19,30 @@ class LoginSwingDemo extends JFrame
 	}
 	void setComponents()
 	{	 
-		l1=new JLabel("Welcome to VJTech Academy");
+		Cursor c1=new Cursor(Cursor.CROSSHAIR_CURSOR);
+		Font f1=new Font("Times New Roman",Font.BOLD,28);
+		Font f2=new Font("Callibri",Font.ITALIC,22);
+		
+		l1=new JLabel("Welcome to VJTech Academy Institute");
+		l1.setFont(f1);
+		l1.setForeground(Color.RED);
+		
 		l2=new JLabel("Username");
 		l3=new JLabel("Password");
+		l3.setFont(f2);
+		l3.setForeground(Color.BLUE);
+		
 		l4=new JLabel();
 		t1=new JTextField();
 		t2=new JPasswordField();
+		
 		b1=new JButton("Login");
-		b2=new JButton("Clear");
+		b1.setBackground(Color.RED);
+		b1.setForeground(Color.WHITE);
+		
+		b1.setCursor(c1);
+		
+		b2=new JButton("AutoFill");
 		b3=new JButton("ADD");
 		setLayout(null);
 		
@@ -38,15 +56,16 @@ class LoginSwingDemo extends JFrame
 		add(b2);
 		add(b3);
 		
-		l1.setBounds(100,50,300,30);
+		l1.setBounds(100,50,500,30);
 		l2.setBounds(100,200,100,30);
-		l3.setBounds(100,350,100,30);
+		l3.setBounds(100,350,200,30);
 		l4.setBounds(100,550,400,30);
 		t1.setBounds(350,200,100,30);
 		t2.setBounds(350,350,100,30);
 		b1.setBounds(200,450,100,30);
 		b2.setBounds(400,450,100,30);
 		b3.setBounds(500,550,100,30);
+		
 		
 		b1.addActionListener(new Log());
 		b2.addActionListener(new Clear());
@@ -69,11 +88,12 @@ class LoginSwingDemo extends JFrame
 			String s2=t2.getText();
 			if(s1.equals("coding") && s2.equals("seekho"))
 			{	
+				JOptionPane.showMessageDialog(null,"Login Successful");
 				l4.setText("Login Successful");
 			}
 			else
 			{
-				l4.setText("Login UnSuccessful");
+				JOptionPane.showMessageDialog(null,"Login UnSuccessful");
 			}
 		}	
 	}
@@ -81,8 +101,8 @@ class LoginSwingDemo extends JFrame
 	{	
 		public void actionPerformed(ActionEvent e1) 
 		{	
-			t1.setText("");
-			t2.setText("");
+			t1.setText("Karan");
+			t2.setText("Mohite");
 		}	
 	}
 	class Add implements ActionListener
