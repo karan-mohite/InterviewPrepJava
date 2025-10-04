@@ -4,7 +4,7 @@ import java.awt.*;
 
 class LoginSwingDemo extends JFrame
 {	
-	JLabel l1,l2,l3,l4;
+	JLabel l1,l2,l3,l4,l5;
 	JTextField t1;
 	JButton b1,b2,b3;
 	JPasswordField t2;
@@ -19,8 +19,12 @@ class LoginSwingDemo extends JFrame
 	}
 	void setComponents()
 	{
+ 		 
 		setBackground(Color.red);
 		Cursor c1=new Cursor(Cursor.CROSSHAIR_CURSOR);
+		Cursor c2=new Cursor(Cursor.HAND_CURSOR);
+		Cursor c3=new Cursor(Cursor.WAIT_CURSOR);
+
 		Font f1=new Font("Times New Roman",Font.BOLD,28);
 		Font f2=new Font("Callibri",Font.ITALIC,22);
 		
@@ -44,6 +48,7 @@ class LoginSwingDemo extends JFrame
 		t1=new JTextField();
 		t2=new JPasswordField();
 		
+	
 		b1=new JButton("Login");
 		b1.setBackground(Color.RED);
 		b1.setForeground(Color.WHITE);
@@ -52,10 +57,12 @@ class LoginSwingDemo extends JFrame
 		b2=new JButton("Clear");
 		b2.setBackground(Color.RED);
 	    b2.setForeground(Color.WHITE);
-
+		b2.setCursor(c2);
+		
 		b3=new JButton("ADD");
 		b3.setBackground(Color.RED);
 		b3.setForeground(Color.WHITE);
+		b3.setCursor(c3);
 
 		setLayout(null);
 		
@@ -63,6 +70,7 @@ class LoginSwingDemo extends JFrame
 		add(l2);
 		add(l3);
 		add(l4);
+	 
 		add(t1);
 		add(t2);
 		add(b1);
@@ -73,6 +81,7 @@ class LoginSwingDemo extends JFrame
 		l2.setBounds(100,200,160,50);
 		l3.setBounds(100,350,160,30);
 		l4.setBounds(100,550,400,30);
+	 
 		t1.setBounds(350,200,100,30);
 		t2.setBounds(350,350,100,30);
 		b1.setBounds(200,450,100,30);
