@@ -23,12 +23,17 @@ class LoginSwingDemo extends JFrame
 		Font f1=new Font("Times New Roman",Font.BOLD,28);
 		Font f2=new Font("Callibri",Font.ITALIC,22);
 		
+		Font f=new Font("Callibri",Font.BOLD,25);
+		
 		l1=new JLabel("Welcome to VJTech Academy Institute");
 		l1.setFont(f1);
 		l1.setForeground(Color.RED);
 		
 		l2=new JLabel("Username");
+		l2.setFont(f);
 		l3=new JLabel("Password");
+		l3.setFont(f);
+		
 		l3.setFont(f2);
 		l3.setForeground(Color.BLUE);
 		
@@ -57,8 +62,8 @@ class LoginSwingDemo extends JFrame
 		add(b3);
 		
 		l1.setBounds(100,50,500,30);
-		l2.setBounds(100,200,100,30);
-		l3.setBounds(100,350,200,30);
+		l2.setBounds(100,200,160,50);
+		l3.setBounds(100,350,160,30);
 		l4.setBounds(100,550,400,30);
 		t1.setBounds(350,200,100,30);
 		t2.setBounds(350,350,100,30);
@@ -71,6 +76,31 @@ class LoginSwingDemo extends JFrame
 		b2.addActionListener(new Clear());
 		b3.addActionListener(new Add());
 		
+		l1.addMouseListener(new MouseL());
+		
+		
+	}
+	class MouseL implements MouseListener
+	{	
+		public void mouseClicked(MouseEvent e1)
+		{ 
+		}			
+		public void mouseEntered(MouseEvent e1)
+		{
+			l1.setForeground(Color.RED);
+		}			
+		public void mouseExited(MouseEvent e1) 
+		{
+			l1.setForeground(Color.BLACK);
+		}
+		public void mousePressed(MouseEvent e1)
+		{
+			l1.setText("");
+		}			
+		public void mouseReleased(MouseEvent e1)
+		{
+			l1.setText("Username");
+		}			  
 	}
 	public static void main(String args[])
 	{
