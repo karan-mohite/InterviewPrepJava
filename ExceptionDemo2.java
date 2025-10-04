@@ -20,7 +20,6 @@ class ExceptionDemo2
 			System.out.println(e1.getMessage());	
 			System.out.println("Current Balance is:"+cb);
 		}
-		
 	}
 }
  
