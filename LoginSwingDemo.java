@@ -18,7 +18,8 @@ class LoginSwingDemo extends JFrame
 		
 	}
 	void setComponents()
-	{	 
+	{
+		setBackground(Color.red);
 		Cursor c1=new Cursor(Cursor.CROSSHAIR_CURSOR);
 		Font f1=new Font("Times New Roman",Font.BOLD,28);
 		Font f2=new Font("Callibri",Font.ITALIC,22);
@@ -31,11 +32,13 @@ class LoginSwingDemo extends JFrame
 		
 		l2=new JLabel("Username");
 		l2.setFont(f);
+		l2.setBackground(Color.BLUE);
+		l2.setForeground(Color.BLUE);
+		
 		l3=new JLabel("Password");
 		l3.setFont(f);
-		
-		l3.setFont(f2);
 		l3.setForeground(Color.BLUE);
+		l3.setBackground(Color.BLUE);
 		
 		l4=new JLabel();
 		t1=new JTextField();
@@ -44,11 +47,16 @@ class LoginSwingDemo extends JFrame
 		b1=new JButton("Login");
 		b1.setBackground(Color.RED);
 		b1.setForeground(Color.WHITE);
-		
 		b1.setCursor(c1);
 		
-		b2=new JButton("AutoFill");
+		b2=new JButton("Clear");
+		b2.setBackground(Color.RED);
+	    b2.setForeground(Color.WHITE);
+
 		b3=new JButton("ADD");
+		b3.setBackground(Color.RED);
+		b3.setForeground(Color.WHITE);
+
 		setLayout(null);
 		
 		add(l1);
@@ -68,8 +76,8 @@ class LoginSwingDemo extends JFrame
 		t1.setBounds(350,200,100,30);
 		t2.setBounds(350,350,100,30);
 		b1.setBounds(200,450,100,30);
-		b2.setBounds(400,450,100,30);
-		b3.setBounds(500,550,100,30);
+		b2.setBounds(350,450,100,30);
+		b3.setBounds(500,450,100,30);
 		
 		
 		b1.addActionListener(new Log());
@@ -131,8 +139,8 @@ class LoginSwingDemo extends JFrame
 	{	
 		public void actionPerformed(ActionEvent e1) 
 		{	
-			t1.setText("Karan");
-			t2.setText("Mohite");
+			t1.setText(" ");
+			t2.setText(" ");
 		}	
 	}
 	class Add implements ActionListener
