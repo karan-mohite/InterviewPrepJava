@@ -7,7 +7,18 @@ class CollectionArrayListDemo
 		a1.add("A");
 		a1.add("B");
 		a1.add("C");
-		System.out.println(a1);
+		a1.add(2,"G");
+		
+		Iterator g1=a1.iterator();
+		
+		while(g1.hasNext())
+		{	
+			String s1=(String)g1.next();
+			if(s1!="G")
+			{
+				System.out.println(s1);
+			}
+		}
 	}
 }
 
