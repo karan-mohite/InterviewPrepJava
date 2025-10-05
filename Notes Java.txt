@@ -1,0 +1,55 @@
+abstract   madhe constrctor asto 
+
+interface  madhe constructor nasto 
+
+interface madhe variable bydefault public static final astat 
+and function public and abstract astat interface madhe 
+
+static function inherit hote nahi 
+static variable inherit hoto 
+
+all class madhe one che public class asto fkt te pan main body asel to class asu shakato 
+
+constructor private asu shakato
+
+interface and abstract che object tayar karu shakat nahi
+
+interface cha reference variable karu shakato
+
+Scanner sc=new Scanner(System.in) system.in ka write kartat tr je aapan enter karel 
+te buffer madhe jate aani buffer la keyboard shi connect karayala system.in use krtat
+
+throw keyword used konte execption ahe mahiti nahi java la te print karanyasathi 
+throw keyword cha  use krtat error message throw karayala pan use kertat te
+
+setMessage And getMessage he Throwable class madhe ast
+
+Runtime Exception:
+1)Arithematic Exception
+2)ArrayIndexOutOfBoundsException
+3)NullPointerException
+
+Compile Time EXception:
+1)SQL Exception
+2)ClassNotFoundException
+3)IOException
+
+throws keyword cha use future madhi exception yehil java ready raha teva te use krayache
+
+thow and throws keyword difference 
+throw keyword exception throw karayala use krtata 
+throws java exception la report karayala use krtat
+
+enumeration only stack and Vector sathi use kartat
+
+Iterator all sathi use krtat
+
+Treee Set and Tree Map madhe heterogenous elemenet nastat homogeneous astat
+
+Enumeration -it is a interface
+
+Iterator And List Iterator Interface ahe
+
+
+
+
