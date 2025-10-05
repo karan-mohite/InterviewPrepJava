@@ -13,6 +13,7 @@ class CollectionLinkedListDemo
 		System.out.println(l1.get(1));
 		System.out.println(l1.getFirst());
 		System.out.println(l1.getLast());		
+		   
 		
 	}			
 }
