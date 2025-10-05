@@ -53,9 +53,3 @@ Iterator And List Iterator Interface ahe
 Enumeration che funtions -elements() ahe
 
 Iterator che function iterator() ahe 
-
-
-
-
-
-
